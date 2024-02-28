@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Panchi banu urti firu</title>
+</head>
+<body>
+    <header class="text-center mx-4 my-10">
+        <div class="join">
+            <input id="search-field" class="input input-bordered join-item rounded-lg bg-gray-700 text-white" placeholder="Search here..."/>
+            <button onclick="searchHandler()" class="btn join-item border-none outline-none rounded-lg bg-red-600 text-white text-lg">Search</button>
+          </div>
+
+    </header>
+    <main>
+
+        <section class="text-center hidden" id="loading-spinner">
+            <span class="loading loading-bars text-green-500 loading-lg"></span>
+        </section>
+
+        <section>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <!-- appending childs here -->
+            </div>
+
+            <div class="text-center hidden" id="show-all-container">
+                <button id="btn-show-all" class="btn btn-outline btn-accent ">Show All</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/phone.js"></script>
+</body>
+</html>
